@@ -12,7 +12,7 @@ This is a minimal arduino sketch that just responds to the JUDI handshake.
 ```c++
 #include "judi.hpp"
 
-JUDI judi("your dev9ce", "$GME42069");
+JUDI judi("your device", "$GME42069");
 
 void check_comms(char currentChar) {
     if (judi.update(currentChar)) {
